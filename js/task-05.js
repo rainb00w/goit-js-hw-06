@@ -7,6 +7,9 @@ function changeName(event){
   
     outputName.textContent =  event.currentTarget.value;
     console.log(event.currentTarget.value);
+    if (event.currentTarget.value.length === 0) {
+        outputName.textContent = 'Anonymous';
+    };
 };
 
 // console.log(inputForm);
